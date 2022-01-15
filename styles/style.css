@@ -16,7 +16,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    color: turquoise;
+    color: rgb(238, 66, 95);
     animation: typing 3s linear infinite;
 }
 @keyframes typing{
