@@ -87,6 +87,11 @@ body{
     color: white;
     border-radius: 25px;
 }
+
+/*************** 
+middle part/popular container 
+***************** */
+
 .popular-container{
     width: 1050px;
     margin: auto;
@@ -142,12 +147,22 @@ border-radius: 5px;
 .btn{
     padding-top: 2px;
 }
+
+/*************** 
+featured part 
+***************** */
+
 .featured-part{
     width: 1110px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 70px;
 }
+
+/*************** 
+footer part 
+***************** */
+
 footer{
     background-color: rgb(35, 30, 65);
     color: rgb(180, 212, 238);
