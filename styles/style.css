@@ -3,6 +3,60 @@ body{
     padding: 0; 
     font-family: 'Poppins', sans-serif;
 }
+
+/* Animation Part */
+
+.animation{
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.animation::before{
+    content: 'Influencer';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: turquoise;
+    animation: typing 3s linear infinite;
+}
+@keyframes typing{
+    0%{
+        content: 'influ';
+    }
+    16%{
+        content: 'influe';
+    }
+    32%{
+        content: 'influen';
+    }
+     48%{
+        content: 'influenc';
+     }
+     64%{
+        content: 'influence';
+     }
+     80%{
+        content: 'influencer';
+     }
+     90%{
+         content: 'influencer';
+     }
+     93%{
+        content: 'influence'
+     }
+     96%{
+         content: 'influenc';
+     }
+     99%{
+        content: 'influen'
+     }
+     100%{
+        content: 'influe'
+     }
+}
+
+
+/* Animation Part End */
   .section-width{
     width: 80%;
     margin: auto; 
@@ -104,4 +158,103 @@ footer a{
     color: rgb(180, 212, 238);
     font-size: 32px;
     margin-right: 22px;
+}
+
+
+/*----------- 
+media querie 
+------------*/
+
+@media only screen and (max-width: 688px) {
+    main h2 {
+      text-align: center;
+    }
+  
+    .top-part {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .top-left {
+      width: 100%;
+    }
+  
+    .camera {
+      margin-top: 30px;
+      width: 60%;
+    }
+  
+    .popular-container {
+      width: 100%;
+    }
+  
+    .popular-container h1 {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .products {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .featured-part {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+  
+    .featured-part p {
+      width: 100%;
+    }
+  
+    .featured-part img {
+      width: 100%;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (max-width: 992px) and (min-width: 689px) {
+    main h2 {
+      text-align: center;
+    }
+  
+    .top-part {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .top-left {
+      width: 100%;
+    }
+  
+    .camera {
+      margin-top: 30px;
+      width: 90%;
+    }
+  
+    .popular-container {
+      width: 100%;
+    }
+  
+    .popular-container h1 {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .popular-container h2 {
+      text-align: start;
+    }
+  
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .featured-part {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
 }
